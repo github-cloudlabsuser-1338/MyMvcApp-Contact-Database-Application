@@ -1,15 +1,21 @@
 {
-  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
   "contentVersion": "1.0.0.0",
   "parameters": {
-    "webAppName": {
-      "value": "myMvcAppWebApp"
+    "appName": {
+      "value": "my-mvcapp-demo"
+    },
+    "resourceGroup": {
+      "value": "GitHub-Copilot-Challenges"
     },
     "location": {
-      "value": "westeurope"
+      "value": "East US"
     },
     "sku": {
-      "value": "F1"
+      "value": "S1"
+    },
+    "appServicePlanName": {
+      "value": "my-mvcapp-plan"
     }
   }
 }
